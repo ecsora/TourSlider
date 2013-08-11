@@ -1,0 +1,38 @@
+/*
+jQuery TourSlider v1.0
+http://www.ecsora.com/tourslider/
+
+Copyright 2012 Ecsora
+Author: Hamza HARBILI
+Free to use under the GPLv2 license.
+http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Clearfix for the .slides element */
+.slides:after {content: "\0020"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* TourSlider Default Theme */
+.tourslider { width: 100%; margin: 0; padding: 0; position: relative; zoom: 1; }
+.tourslider .slides { zoom: 1; height: 500px; overflow: hidden; }
+
+/* Caption style */
+.tourslider .slide-caption { margin: 0px auto; overflow: hidden; padding: 0px; position: absolute; font-family: Georgia, "Times New Roman", Times, serif; color: #ffffff; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); }
+.tourslider .slide-caption .caption { position: absolute; margin: auto; width: 40%; height: 40%; min-width: 400px; max-width: 500px; top: auto; left: auto; bottom: 0; right: 10%; }
+.tourslider .slide-caption h1.caption-title { font-size: 32px; line-height: 32px; margin: 0px 0px 10px 0px; }
+.tourslider .slide-caption .caption-excerpt { font-size: 16px; font-weight: bold; }
+
+/* Direction Nav */
+.tourslider .slides-direction {margin: 0; padding: 0; list-style: none;}
+.tourslider .slides-direction a  { display: block; width: 40px; height: 40px; margin: -20px 0 0; background: url(../img/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0.4; cursor: pointer; text-indent: -9999px; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
+.tourslider .slides-direction .next { background-position: 100% 0; right: 10px; }
+.tourslider .slides-direction .prev { left: 10px; }
+.tourslider:hover .next { opacity: 0.7; }
+.tourslider:hover .prev { opacity: 0.7; }
+.tourslider:hover .next:hover, .tourslider:hover .prev:hover { opacity: 1; }
+/*
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev { opacity: 1; left: -40px;}
+  .flex-direction-nav .flex-next { opacity: 1; right: -40px;}
+}*/
